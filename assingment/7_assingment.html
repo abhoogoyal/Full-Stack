@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>User form</title>
+    </head>
+    <body bgcolor="green">
+        <form method="post">
+        <table >
+            <h2 align="center"><u>User Form</u></h2>
+            <tr>
+                <td><label>First Name</label></td>
+                <td><input type="text" name="txtname" value=""></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="txtpwd" value=""></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td><input type="radio" type="rdogender" value="male"><label>Male</label></td>
+                 <td><input type="radio" type="rdogender" value="female"><label>Female</label></td>
+            </tr>
+            <tr>
+                <td><label>Address</label></td>
+                <td>
+                    <textarea name="txtaddress" row="10" cols="20"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Date Of Birth</label></td>
+                <td><input type="date" name="txtdob" value=""></td>
+            </tr>
+            <tr>
+                <td>Select Games</td>
+                <td>
+                    <input type="radio" name="rdogames" values="Hockey"><label>Hockey</label>
+                    <input type="radio" name="rdogames" values="FootBall"><label>FootBall</label>
+                    <input type="radio" name="rdogames" values="VolleyBall"><label>VolleyBall</label><br>
+                    <input type="radio" name="rdogames" values="Badminton"><label>Badminton</label>
+                    <input type="radio" name="rdogames" values="BaseBall"><label>BaseBall</label>
+                    <input type="radio" name="rdogames" values="Cricket"><label>Cricket</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Material Status</label></td>
+                <td>
+                <input type="radio" name="rdotext" values="Married"><label>Married</label>
+                <input type="radio" name="rdotext" values="Unmarried"><label>Unmarried</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <button name="btnsubmit" type="submmit">Submit</button>
+                <button name="btnreset" type="reset">Reset</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="rdotext"><label>I agree this agrement</label>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
