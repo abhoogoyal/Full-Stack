@@ -1,0 +1,19 @@
+.input1{
+    width: 30%;
+    height: 25px ;
+    font-size: medium;
+    background-color: rgb(9, 255, 0);
+    color:white;
+}
+
+.input2{
+    width:30%;
+    height: 25px ;
+    font-size: medium;
+    background-color: red;
+    color:white;
+}
+
+label{
+    color: yellow;
+}
