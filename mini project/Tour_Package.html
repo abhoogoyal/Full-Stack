@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>tour package | Travel Matrix</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f9ff;
+    }
+
+    header {
+      background: url("  https://image.shutterstock.com/z/stock-photo-travel-collage-of-famous-places-of-the-world-element-for-advertisement-postcard-poster-and-1144071677.jpg") no-repeat center center/cover;
+      color: rgb(8, 8, 8);
+      text-align: left;
+      padding: 110px 30px;
+    }
+
+    nav {
+      background-color: #003d5c;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #007ea7;
+    }
+
+    h2.section-title {
+      text-align: center;
+      margin: 40px 0 10px;
+      color: #003d5c;
+    }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .package {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .package:hover {
+      transform: translateY(-5px);
+    }
+
+    .package img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .package-content {
+      padding: 15px;
+    }
+
+    .package h3 {
+      color: #004d66;
+      margin: 10px 0 8px;
+    }
+
+    .package p {
+      color: #444;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #006680;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #13421d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+   .logo {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo img {
+      width: 50px;
+      margin-right: 10px;
+    }
+
+    .logo h4 {
+      margin: 0;
+      color: #004d66;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<div class="logo">
+  <img src="logo img.jpg" alt="Logo">
+  <h4><u>TravelMatrix</u></h4>
+</div>
+
+<header>
+   <br><br><br><br><br><br><br> 
+</header>
+
+<nav>
+  <a href="Home.html">Home</a>
+  <a href="Destination.html">Destinations</a>
+  <a href="Tour_Package.html">Tour Packages</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Service.html">Services</a>
+  <a href="About_Us.html">About Us</a>
+  <a href="Contact_Us.html">Contact Us</a>
+  <a href="FAQ.html">FAQ</a>
+</nav>
+
+<h2 class="section-title">Top Indian Packages </h2>
+<div class="package-grid">
+  <div class="package">
+    <img src="https://tse2.mm.bing.net/th?id=OIP.jo2Lh0NYJeYMJM3gG3_eOAHaD4&pid=Api&P=0&h=220" alt="Agra">
+    <div class="package-content">
+      <h3>Agra Heritage Tour</h3>
+      <p>Explore the Taj Mahal, Agra Fort, and Mughal cuisine.</p>
+      <p class="price">₹11,999</p>
+    </div>
+  </div>
+  <div class="package">
+    <img src="https://www.tourmyindia.com/socialimg/se-cathedral-church.jpg" alt="Goa">
+    <div class="package-content">
+      <h3>Goa Beach Escape</h3>
+      <p>3 nights with water sports, parties, and coastal vibes.</p>
+      <p class="price">₹14,499</p>
+    </div>
+  </div>
+  <div class="package">
+    <img src="https://tse2.mm.bing.net/th?id=OIP.-Nj9FvfgleWLdLIdZQ0ZFQHaC_&pid=Api&P=0&h=220" alt="Kerala">
+    <div class="package-content">
+      <h3>Kerala Backwaters</h3>
+      <p>5 days in Munnar, Alleppey, and spice gardens.</p>
+      <p class="price">₹24,000</p>
+    </div>
+  </div>
+  <div class="package">
+    <img src="https://tse2.mm.bing.net/th?id=OIP.zNMz5uGS0dZdeSj6pDH9DgHaE8&pid=Api&P=0&h=220" alt="Jaipur">
+    <div class="package-content">
+      <h3>Jaipur Royal Tour</h3>
+      <p>Visit forts, palaces, bazaars and cultural shows.</p>
+      <p class="price">₹18,500</p>
+    </div>
+  </div>
+  <div class="package">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.O04HO1Bd0WttkUbn19_uEwHaEo&pid=Api&P=0&h=220" alt="Manali">
+    <div class="package-content">
+      <h3>Himachal Adventure</h3>
+      <p>Snow activities in Manali, Shimla and Solang Valley.</p>
+      <p class="price">₹26,000</p>
+    </div>
+  </div>
+  <div class="package">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.xBDx6LSnFmyVLbaUr5BHagHaE8&pid=Api&P=0&h=220" alt="Varanasi">
+    <div class="package-content">
+      <h3>Spiritual Varanasi</h3>
+      <p>3-day experience on the Ganges with evening aarti & temples.</p>
+      <p class="price">₹9,999</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="section-title">International Packages </h2>
+<div class="package-grid">
+  <div class="package">
+    <img src="https://phgcdn.com/images/uploads/PARLT/corporatemasthead/PARLT_Exterior_overview.jpg" alt="Paris">
+    <div class="package-content">
+      <h3>Romantic Paris</h3>
+      <p>4 nights with Eiffel Tower, Louvre & Seine cruise.</p>
+      <p class="price">₹89,999</p>
+    </div>
+  </div>
+  <div class="package">
+    <img src="https://a.cdn-hotels.com/gdcs/production13/d1218/3f9f07b0-d301-4635-a74a-e784b8934d06.jpg" alt="Bali">
+    <div class="package-content">
+      <h3>Bali Island Getaway</h3>
+      <p>5-day tropical paradise with beaches & temples.</p>
+      <p class="price">₹72,000</p>
+    </div>
+  </div>
+  <div class="package">
+    <img src="https://tse4.mm.bing.net/th?id=OIP._u10zzArv0kVD4trv7qsIQHaE7&pid=Api&P=0&h=220" alt="Switzerland">
+    <div class="package-content">
+      <h3>Swiss Alps Adventure</h3>
+      <p>Scenic train rides, glaciers, and snow activities.</p>
+      <p class="price">₹1,45,000</p>
+    </div>
+  </div>
+  <div class="package">
+    <img src="https://cdn.audleytravel.com/5507/3933/79/15981473-ithaa-undersea-restaurant-conrad-rangali-island--resort-maldive-island.jpg" alt="Maldives">
+    <div class="package-content">
+      <h3>Luxury Maldives</h3>
+      <p>4 nights in water villa with meals & snorkeling.</p>
+      <p class="price">₹1,30,000</p>
+    </div>
+  </div>
+  <div class="package">
+    <img src="https://tse2.mm.bing.net/th?id=OIP.4rIsRiKiwITPMkyz6GhmsAHaDx&pid=Api&P=0&h=220" alt="Dubai">
+    <div class="package-content">
+      <h3>Dubai City Tour</h3>
+      <p>4 days with desert safari, Burj Khalifa & shopping.</p>
+      <p class="price">₹65,000</p>
+    </div>
+  </div>
+  <div class="package">
+    <img src="https://media.vogue.in/wp-content/uploads/2018/04/Your-ultimate-guide-to-Tokyo-Japan1.jpg" alt="Tokyo">
+    <div class="package-content">
+      <h3>Tokyo & Kyoto</h3>
+      <p>5 days in Japan with culture, gardens, and sushi trails.</p>
+      <p class="price">₹1,15,000</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>2025 TravelMatrix. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

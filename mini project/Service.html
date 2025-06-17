@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Services | TravelMatrix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f9ff;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    nav {
+      background-color: #004d66;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #007ea7;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #003d5c;
+      font-size: 34px;
+    }
+
+    .service-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .service-content {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .service-content h3 {
+      margin: 0 0 10px;
+      color: #007ea7;
+      font-size: 20px;
+    }
+
+    .service-content p {
+      color: #555;
+      font-size: 14.5px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .book-btn {
+      display: inline-block;
+      padding: 10px 18px;
+      margin: 10px 20px 20px;
+      background-color: #007ea7;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 5px;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+
+    .book-btn:hover {
+      background-color: #005f73;
+    }
+
+    footer {
+      background-color: #13421d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+      header {
+        padding: 60px 20px;
+      }
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo img {
+      width: 50px;
+      margin-right: 10px;
+    }
+
+    .logo h4 {
+      margin: 0;
+      color: #004d66;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    /* Modal Styles */
+    #bookingModal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 90%;
+      position: relative;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .modal-content input, .modal-content textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .modal-content button {
+      padding: 10px 20px;
+      background: #007ea7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .modal-content button:hover {
+      background-color: #005f73;
+    }
+  </style>
+</head>
+<body>
+
+<div class="logo">
+  <img src="logo img.jpg" alt="Logo">
+  <h4><u>TravelMatrix</u></h4>
+</div>
+
+<header>
+  <h1>Our Services</h1>
+  <p>Experience premium travel support with TravelMatrix</p>
+</header>
+
+<nav>
+  <a href="Home.html">Home</a>
+  <a href="Destination.html">Destinations</a>
+  <a href="Tour_Package.html">Tour Packages</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Service.html">Services</a>
+  <a href="About_Us.html">About Us</a>
+  <a href="Contact_Us.html">Contact Us</a>
+  <a href="FAQ.html">FAQ</a>
+</nav>
+
+<h2>Explore Our Services</h2>
+
+<div class="service-container">
+  <!-- Repeat this block for each service -->
+  <div class="service-card">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.pSgXXmNLtbWcV4T8RYuA2gHaD2&pid=Api&P=0&h=220" alt="Flight Booking">
+    <div class="service-content">
+      <h3>Flight Booking</h3>
+      <p>Book flights worldwide with top airlines at best deals.</p>
+    </div>
+    <a class="book-btn" onclick="openModal('Flight Booking')">Book Now</a>
+  </div>
+
+  <div class="service-card">
+    <img src="https://www.adotrip.com/public/images/blogs/master_images/60421f3c1797f-Online_Hotel_Booking.jpg" alt="Hotel Booking">
+    <div class="service-content">
+      <h3>Hotel Booking</h3>
+      <p>Luxury & budget hotels available across all destinations.</p>
+    </div>
+    <a class="book-btn" onclick="openModal('Hotel Booking')">Book Now</a>
+  </div>
+
+  <div class="service-card">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.-ehiA9D6ILQ8Mp-TgtzB5AHaEr&pid=Api&P=0&h=220" alt="Visa Assistance">
+    <div class="service-content">
+      <h3>Visa Assistance</h3>
+      <p>Complete visa support and documentation help.</p>
+    </div>
+    <a class="book-btn" onclick="openModal('Visa Assistance')">Book Now</a>
+  </div>
+
+  <div class="service-card">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.C3h52cudNHEECU7DBEneJwHaCk&pid=Api&P=0&h=220" alt="Travel Insurance">
+    <div class="service-content">
+      <h3>Travel Insurance</h3>
+      <p>Secure your journey with full travel coverage.</p>
+    </div>
+    <a class="book-btn" onclick="openModal('Travel Insurance')">Book Now</a>
+  </div>
+
+  <div class="service-card">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.QJzpPYHtM6FrzUsnLFepdwHaDA&pid=Api&P=0&h=220" alt="Car Rentals">
+    <div class="service-content">
+      <h3>Car Rentals</h3>
+      <p>Chauffeur & self-drive cars at best prices.</p>
+    </div>
+    <a class="book-btn" onclick="openModal('Car Rentals')">Book Now</a>
+  </div>
+
+  <div class="service-card">
+    <img src="https://rezdy.com/wp-content/uploads/2018/06/Blog-photos-2-24_11zon.jpg" alt="Tour Guides">
+    <div class="service-content">
+      <h3>Local Tour Guides</h3>
+      <p>Explore local culture with expert guides.</p>
+    </div>
+    <a class="book-btn" onclick="openModal('Local Tour Guides')">Book Now</a>
+  </div>
+
+  <div class="service-card">
+    <img src="http://alaskatours.com/wp-content/uploads/2016/04/Holland-America-ship-Alaska.jpg" alt="Cruise Packages">
+    <div class="service-content">
+      <h3>Cruise Packages</h3>
+      <p>Luxurious cruise experiences with top international liners.</p>
+    </div>
+    <a class="book-btn" onclick="openModal('Cruise Packages')">Book Now</a>
+  </div>
+
+  <div class="service-card">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.F3Vm-X1dQi1jL1BtgsrKoQHaDS&pid=Api&P=0&h=220" alt="Adventure Trips">
+    <div class="service-content">
+      <h3>Adventure Trips</h3>
+      <p>Trekking, rafting, and thrill-seeking packages across India & beyond.</p>
+    </div>
+    <a class="book-btn" onclick="openModal('Adventure Trips')">Book Now</a>
+  </div>
+
+  <div class="service-card">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.EzARDgu-OtOXn0sPufa-nwHaE8&pid=Api&P=0&h=220" alt="Custom Tour Planning">
+    <div class="service-content">
+      <h3>Custom Tour Planning</h3>
+      <p>Create your own itinerary with the help of our travel experts.</p>
+    </div>
+    <a class="book-btn" onclick="openModal('Custom Tour Planning')">Book Now</a>
+  </div>
+
+  <div class="service-card">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.U22daLDRCtpLNvej-Xm7VQHaE7&pid=Api&P=0&h=220" alt="Corporate Travel">
+    <div class="service-content">
+      <h3>Corporate Travel</h3>
+      <p>Tailored solutions for business trips, conferences, and MICE events.</p>
+    </div>
+    <a class="book-btn" onclick="openModal('Corporate Travel')">Book Now</a>
+  </div>
+</div>
+
+
+<div id="bookingModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h3 id="modalTitle">Book Now</h3>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="details">Travel Details:</label>
+      <textarea id="details" name="details" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <p>2025 TravelMatrix. All Rights Reserved.</p>
+</footer>
+
+<script>
+  function openModal(service) {
+    document.getElementById('modalTitle').innerText = "Book Now: " + service;
+    document.getElementById('bookingModal').style.display = 'flex';
+  }
+
+  function closeModal() {
+    document.getElementById('bookingModal').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FAQs | TravelMatrix</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f8ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007ea7;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #004d66;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #006f8a;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 30px 0;
+      color: #003d5c;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .faq-box {
+      background-color: white;
+      border: 1px solid #ddd;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .faq-box h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #007ea7;
+      cursor: pointer;
+    }
+
+    .faq-box p {
+      display: none;
+      margin-top: 10px;
+      font-size: 15px;
+      color: #333;
+    }
+
+    footer {
+      background-color: #13421d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+   .logo {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo img {
+      width: 50px;
+      margin-right: 10px;
+    }
+
+    .logo h4 {
+      margin: 0;
+      color: #004d66;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<div class="logo">
+  <img src="logo img.jpg" alt="Logo">
+  <h4><u>TravelMatrix</u></h4>
+</div>
+
+<header>
+  <h1>FAQs - Frequently Asked Questions</h1>
+  <p>We are here to help you with your travel queries!</p>
+</header>
+
+<nav>
+  <a href="Home.html">Home</a>
+  <a href="Destination.html">Destinations</a>
+  <a href="Tour_Package.html">Tour Packages</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Service.html">Services</a>
+  <a href="About_Us.html">About Us</a>
+  <a href="Contact_Us.html">Contact Us</a>
+  <a href="FAQ.html">FAQ</a>
+</nav>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-container">
+
+  <div class="faq-box">
+    <h3 onclick="toggleAnswer(this)">What is TravelMatrix?</h3>
+    <p>TravelMatrix is a travel website where you can book flights, hotels, and tour packages easily.</p>
+  </div>
+
+  <div class="faq-box">
+    <h3 onclick="toggleAnswer(this)">How do I book a tour?</h3>
+    <p>Go to the 'Tour Packages' page and click on the 'Book Now' button under your desired package.</p>
+  </div>
+
+  <div class="faq-box">
+    <h3 onclick="toggleAnswer(this)">Can I cancel my booking?</h3>
+    <p>Yes, you can cancel your booking. Check the cancellation policy on the booking page.</p>
+  </div>
+
+  <div class="faq-box">
+    <h3 onclick="toggleAnswer(this)">Do you provide international tours?</h3>
+    <p>Yes, we offer both domestic and international tour packages.</p>
+  </div>
+
+  <div class="faq-box">
+    <h3 onclick="toggleAnswer(this)">Is travel insurance included?</h3>
+    <p>Travel insurance is optional and can be added while booking a trip.</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>2025 TravelMatrix. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleAnswer(element) {
+    var answer = element.nextElementSibling;
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  }
+</script>
+
+</body>
+</html>
+

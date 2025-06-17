@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery | TravelMatrix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f9ff;
+    }
+
+    header {
+      background: url("https://www.pixelstalk.net/wp-content/uploads/2016/09/Skydiving-Adventure-Wallpaper.jpg") no-repeat center center/cover;
+      color: rgb(22, 22, 22);
+      text-align: center;
+      padding: 100px 30px;
+    }
+
+    nav {
+      background-color: #003d5c;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #007ea7;
+    }
+
+    h2.section-title {
+      text-align: center;
+      margin: 40px 0 10px;
+      color: #003d5c;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #13421d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo img {
+      width: 50px;
+      margin-right: 10px;
+    }
+
+    .logo h4 {
+      margin: 0;
+      color: #004d66;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<div class="logo">
+  <img src="logo img.jpg" alt="Logo">
+  <h4><u>TravelMatrix</u></h4>
+</div>
+
+<header>
+  <h1>Gallery</h1>
+  <p>Visual Glimpses from Our Wonderful Tours</p>
+</header>
+
+<nav>
+  <a href="Home.html">Home</a>
+  <a href="Destination.html">Destinations</a>
+  <a href="Tour_Package.html">Tour Packages</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Service.html">Services</a>
+  <a href="About_Us.html">About Us</a>
+  <a href="Contact_Us.html">Contact Us</a>
+  <a href="FAQ.html">FAQ</a>
+</nav>
+
+<h2 class="section-title">Travel Moments</h2>
+<div class="gallery-grid">
+  <img src="https://www.worldatlas.com/upload/c4/8c/1f/shutterstock-1408456052.jpg" alt="Taj Mahal">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.HyjU2tItxGqeu1piwJogEQHaE8&pid=Api&P=0&h=220" alt="Kerala Backwaters">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.cR-6uPflfW2s6qEguTdLGgHaDo&pid=Api&P=0&h=220" alt="Jaipur Fort">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.zPtj8h1FkImRw6R1TknMswHaE8&pid=Api&P=0&h=220" alt="Manali Snow">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.XnW5vScca4fqgTzhygPbqwHaFj&pid=Api&P=0&h=220" alt="Varanasi Ghats">
+  <img src="http://media.cntraveller.in/wp-content/uploads/2016/10/calangute.jpg" alt="Goa Beach">
+  <img src="http://www.pixelstalk.net/wp-content/uploads/2016/06/Paris-Eiffel-Tower-Wallpaper-HD-Widescreen.jpg" alt="Paris Eiffel Tower">
+  <img src="http://getwallpapers.com/wallpaper/full/c/b/3/1123111-swiss-alps-wallpaper-2560x1600-htc.jpg" alt="Swiss Alps">
+  <img src="https://tse3.mm.bing.net/th?id=OIP.wg-Pg0WsiW0YWs7ODn_EQAHaE7&pid=Api&P=0&h=220" alt="Bali Beach">
+  <img src="https://cdn1.matadornetwork.com/blogs/1/2021/05/maldives-resorts-2.jpg" alt="Maldives Resort">
+  <img src="https://tse3.mm.bing.net/th?id=OIP.btIZ8Apilajgnk0i11rG5gHaE8&pid=Api&P=0&h=220" alt="Tokyo City">
+  <img src="https://wallpaperaccess.com/full/489825.jpg" alt="Dubai Skyline">
+  <img src="https://tse3.mm.bing.net/th?id=OIP.yd6M89PjXtm2JWjEVB8jNwHaEK&pid=Api&P=0&h=220" alt="Ladakh Roads">
+  <img src="https://tse2.mm.bing.net/th?id=OIP.qDJ5M0HWr1OySRVAQSklYAHaFH&pid=Api&P=0&h=220" alt="Kashmir Valley">
+  <img src="https://tse3.mm.bing.net/th?id=OIP.BE50LyGsJpuZQ2y6kWe09QHaFR&pid=Api&P=0&h=220" alt="Agra Fort">
+  <img src="https://media.cntraveler.com/photos/53d9c4b1dcd5888e1459b47c/master/pass/taj-lake-palace-udaipur-rajasthan-udaipur-india-108677-1.jpg" alt="Udaipur Lake">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.Acy0vU8WStNTKMLOhN-5IQHaEo&pid=Api&P=0&h=220" alt="Andaman Beach">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.ORVE-JWRSsZFOmMQY_XceQHaEy&pid=Api&P=0&h=220" alt="Leh Monastery">
+  <img src="https://tse2.mm.bing.net/th?id=OIP.pDUDftSwLMAkMvXEhCwLBwHaEJ&pid=Api&P=0&h=220" alt="New York City">
+  <img src="https://tse2.mm.bing.net/th?id=OIP.hTD7YMEJobSp7bgVFpLL7gHaEW&pid=Api&P=0&h=220" alt="Rome Colosseum">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.azZ9FM_hbAkICs24mL0a0gHaE8&pid=Api&P=0&h=220" alt="Thailand Island">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.YdEwnftG7xhs_-t5qWrjMAHaE8&pid=Api&P=0&h=220" alt="Egypt Pyramids">
+  <img src="https://tse3.mm.bing.net/th?id=OIP.muEF6QFKsAURGSQ41hPBOQHaFM&pid=Api&P=0&h=220" alt="Machu Picchu">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.kaPTyVohkujUItCc1RkUpgHaEK&pid=Api&P=0&h=220" alt="Sydney Opera House">
+</div>
+
+<footer>
+  <p>2025 TravelMatrix. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
